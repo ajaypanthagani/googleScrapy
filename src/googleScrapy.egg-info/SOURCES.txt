@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/googleScrapy/__init__.py
+src/googleScrapy/__main__.py
+src/googleScrapy/ua_file.txt
+src/googleScrapy.egg-info/PKG-INFO
+src/googleScrapy.egg-info/SOURCES.txt
+src/googleScrapy.egg-info/dependency_links.txt
+src/googleScrapy.egg-info/requires.txt
+src/googleScrapy.egg-info/top_level.txt

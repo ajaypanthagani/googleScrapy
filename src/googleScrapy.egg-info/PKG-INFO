@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: googleScrapy
+Version: 0.0.1
+Summary: This is a simple package to scrape google search results
+Home-page: https://github.com/ajaypanthagani/googleScrapy
+Author: Ajay Panthagani
+Author-email: ajaypanthagani321@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/googleScrapy/issues
+Description: # googleScrapy
+        
+        * response structure:
+        
+        ```python
+        {
+            'status_code' : status_code, #Eg. 200, 429, 500
+            'links' : [link1, link2, link3] #Eg. https://example.com
+        }
+        ```
+        
+        * Usage:
+        
+        ```python
+        from googleScrapy import Google
+        
+        response = Google().search('search query goes here')
+        
+        if response.status_code == 200:
+            print('fetched succesfully')
+            for link in response.links:
+                print(link)
+        else:
+            print(f'Error, status code: {response.status_code}')
+        ```
+        
+        * Free Software: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
